@@ -35,7 +35,7 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal 10, @m.red_ticket(2,2,2)
 		assert_equal 5, @m.red_ticket(0,0,0)
 		assert_equal 1, @m.red_ticket(0,1,2)
-		assert_equal 0, @m.red_ticket(5,5,5)
+		assert_equal 0, @m.red_ticket(0,0,1)
 
 	end
 
