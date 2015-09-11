@@ -37,5 +37,34 @@ module MethodsQuiz2
 		end		
 		
 	end
+	def squirrels_play?(temp,summer)
+		if summer
+			if temp >= 60 && temp <= 100
+				true
+			else
+				false
+			end
+		else
+			if temp >= 60 && temp <= 90
+				true
+			else
+				false
+			end
+		end
+		
+	end
+	def red_ticket(a,b,c)
+		if a ==b && b == c
+			if a ==2 && b == 2 && c == 2
+				10
+			else
+				5
+			end
+		elsif  b!= a && c != a
+			1
+		else
+			0
+		end
+	end
 end
 
