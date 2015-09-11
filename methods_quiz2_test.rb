@@ -27,8 +27,15 @@ class MethodsQuizTest < MiniTest::Test
 	def test_squirrels_play
 		assert_equal true, @m.squirrels_play?(70, false)
 		assert_equal false, @m.squirrels_play?(20, false)
-		assert_equal false, @m.squirrels_play(95, false)
+		assert_equal false, @m.squirrels_play?(95, false)
 		assert_equal true, @m.squirrels_play?(98,true)
+
+	end
+	def test_red_ticket
+		assert_equal 10, @m.red_ticket(2,2,2)
+		assert_equal 5, @m.red_ticket(0,0,0)
+		assert_equal 1, @m.red_ticket(0,1,2)
+		assert_equal 0, @m.red_ticket(5,5,5)
 
 	end
 
